@@ -48,6 +48,7 @@ public class Cart {
 				DigitalVideoDisc disc = itemsOrdered[i];
 				System.out.println((i + 1) + ". DVD - " + disc.toString() + ": " + disc.getCost() + " $");
 			}
+			
 		}
 		System.out.println("Total cost: " + totalCost());
 		System.out.println("***************************************************");
