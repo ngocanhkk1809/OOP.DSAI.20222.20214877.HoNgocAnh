@@ -60,6 +60,7 @@ public class Cart {
 			if (disc != null && disc.getId() == id) {
 				System.out.println("Found DVD with ID " + id + ": " + disc.toString());
 				found = true;
+				
 			}
 		}
 		if (!found) {
