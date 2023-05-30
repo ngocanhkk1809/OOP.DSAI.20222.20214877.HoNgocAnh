@@ -8,6 +8,7 @@ public class DigitalVideoDisc {
 	private int id;
 	private static int nbDigitalVideoDiscs = 0;
 	
+	
 	public DigitalVideoDisc(String title) {
 		super();
 		this.title = title;
