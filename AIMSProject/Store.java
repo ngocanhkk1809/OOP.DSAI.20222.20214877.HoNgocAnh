@@ -8,10 +8,6 @@ public class Store {
         count = 0;
     }
     
-
-
-    
-
     public void addDVD(DigitalVideoDisc dvd) {
         DigitalVideoDisc[] newItems = new DigitalVideoDisc[count + 1];
         System.arraycopy(itemsInStore, 0, newItems, 0, count);
