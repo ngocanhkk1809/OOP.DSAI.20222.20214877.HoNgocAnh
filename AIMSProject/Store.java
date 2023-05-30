@@ -7,6 +7,7 @@ public class Store {
         itemsInStore = new DigitalVideoDisc[0];
         count = 0;
     }
+    
 
     public void addDVD(DigitalVideoDisc dvd) {
         DigitalVideoDisc[] newItems = new DigitalVideoDisc[count + 1];
