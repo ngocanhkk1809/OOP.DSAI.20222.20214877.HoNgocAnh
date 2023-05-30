@@ -1,6 +1,6 @@
-package hust.soict.aims.cart;
+package hust.soict.dsai.aims.cart;
 
-import hust.soict.aims.disc.DigitalVideoDisc;
+import hust.soict.dsai.aims.disc.DigitalVideoDisc;
 
 public class Cart {
 	

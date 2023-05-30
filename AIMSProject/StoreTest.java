@@ -1,5 +1,5 @@
-import hust.soict.aims.disc.DigitalVideoDisc;
-import hust.soict.aims.store.Store;
+import hust.soict.dsai.aims.disc.DigitalVideoDisc;
+import hust.soict.dsai.aims.store.Store;
 
 public class StoreTest {
     public static void main(String[] args) {
