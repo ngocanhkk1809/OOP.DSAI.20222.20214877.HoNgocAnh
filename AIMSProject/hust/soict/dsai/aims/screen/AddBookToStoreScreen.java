@@ -19,7 +19,7 @@ public class AddBookToStoreScreen extends AddItemToStoreScreen {
 	private float cost;
 	private Book book;
 	private JTextField tftitle;
-	private JTextField tfcategory;
+		private JTextField tfcategory;
 	private JTextField tfcost;
 	
 	JPanel createHeader() {
