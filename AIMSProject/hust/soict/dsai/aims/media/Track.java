@@ -1,10 +1,11 @@
 package hust.soict.dsai.aims.media;
 
-public class Track implements Playable{
+import hust.soict.dsai.aims.exception.PlayerException;
+
+public class Track implements Playable {
 	private String title;
 	private int length;
-	public Track(String title, int length) {
-		super();
+	public Track(String title, int length) throws IllegalArgumentException{
 		this.title=title;
 		this.length=length;
 	}
@@ -14,18 +15,22 @@ public class Track implements Playable{
 	public int getLength() {
 		return length;
 	}
-	public void play() {
-		System.out.println("Playing Track: " + getTitle());
-		System.out.println("Track length: " + getLength());
-    }
-	public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        }
-        Track other = (Track) obj;
-        return this.title.equals(other.title) && this.length == other.length;
-    }    
+	public void play() throws PlayerException {
+		if (this.getLength()>0) {
+			System.out.println("Playing Track: " + this.getTitle());
+			System.out.println("Track length: " + this.getLength());
+
+		}else {
+			throw new PlayerException("ERROR: Track length is non-positive");
+		}
+	}
+	public boolean equals(Object o) {
+		if (o instanceof Track) {
+			Track other = (Track) o;
+			if (this.title.equals(other.getTitle()) &&(this.length==other.getLength())){
+				return true;
+			}
+		}
+		return false;
+	}
 }
